@@ -1,0 +1,6 @@
+{
+    "host":     "localhost",
+    "user":     "user1",
+    "password": "pass",
+    "database": "internetbanken"
+}

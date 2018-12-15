@@ -1,0 +1,25 @@
+<!doctype html>
+<meta charset="utf-8">
+<title><%= title %></title>
+<link rel="stylesheet" href="/style/style.css">
+<link rel="icon" href="/favicon.ico">
+<script src="https://use.fontawesome.com/0aee473986.js"></script>
+
+<header>
+    <nav id="menu">
+        <a href="/login/"><%= logInLogOut %></a>
+        <% if(userId == 100000){ %>
+            <a href="/createaccountholder">Ny användare</a>
+            <a href="/createaccount">Nytt bankkonto</a>
+            <a href="/connectaccount">Koppla användare till bankkonto</a>
+            <a href="/usersandaccounts">Visa bankkonton</a>
+            <a href="/showaccountsandinterest">Visa ränta</a>
+        <% } else if(userId != 0){ %>
+            <a href="/showaccounts/<%= userId %>">Kontoöversikt</a>
+            <a href="/swish">Swisha pengar</a>
+            <a href="/showuserinterest/<%= userId %>">Ränta</a>
+            <% } %>
+    </nav>
+</header>
+<body>
+    <div id="wrapper">

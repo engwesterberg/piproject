@@ -1,0 +1,29 @@
+<%- include("header", {title: title}); %>
+<p><%= info %></p>
+
+<form class="label-left" method="post">
+    <fieldset>
+        <legend></legend>
+
+        <label for="fromAccountNumber">Kontonummer</label>
+        <br>
+        <input id="fromAccountNumber" type="number" name="fromAccountNumber">
+        <br>
+
+        <label for="amount">Pinkod</label>
+        <br>
+        <input id="amount" type="number" name="amount">
+        <br>
+
+        <label for="toAccountNumber">Kontonummer (till)</label>
+        <br>
+        <input id="toAccountNumber" type="number" name="toAccountNumber">
+        <br>
+
+
+        <br>
+
+        <input type="submit" name="doit" value="Swisha">
+    </fieldset>
+</form>
+<%- include("footer"); %>
